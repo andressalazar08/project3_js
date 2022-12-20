@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Questrial', sans-serif;
+    background-color: rgb(171, 233, 233);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-height: 100vh;
+    margin: 0;
+}
+
+h1{
+    color: rgb(28, 28, 37) ;
+}
+
+.screen{
+    cursor: pointer;
+    width: 70%;
+    background-color: white !important;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.controls{
+    background: #333;
+    color: white;
+    width: 70%;
+    padding: 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.controls .fa-play{
+    color: #28a745;
+}
+
+
+.controls .fa-stop{
+    color: #dc3545;
+}
+
+.controls .fa-pause{
+    color:white;
+}
+
+
+.controls .btn {
+    border: 0;
+    background:transparent;
+    cursor:pointer;
+}
+
+
+.controls .timestamp{
+    color: white;
+    font-weight: bold;
+    margin-left: 20px;
+    font-size: large;
+}
+
+.btn:focus{
+    outline: 0;
+}
+
+/*Con esta propiedad se indica qué hacer en caso de tener distintos dispositivos*/
+/*Responsive video player*/
+@media(max-width:800px){
+    .screen,
+    .controls{
+        width: 100%;
+    }
+}
